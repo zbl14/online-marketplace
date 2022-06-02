@@ -7,6 +7,7 @@ $(document).ready(function() {
     const deliveryDate = $("input#deliveryDate").val();
     const favoriteColor = $("input#color").val();
     const receipt = $("output#receipt").val();
+    const result = $("personInput + addressInput + food + deliveryDate + favoriteColor").val();
     //$(".person").text(personInput);
     //$(".address").text(addressInput);
     //$(".food").text(food);
@@ -17,7 +18,7 @@ $(document).ready(function() {
     $(".food").text(food);
     $(".deliveryDate").text(deliveryDate);
     $(".favoriteColor").text(favoriteColor);
-    $(".receipt").text();
+    $(".receipt").text(result);
     $("#story").show();
   });
 });
