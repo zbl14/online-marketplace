@@ -8,7 +8,7 @@ $(document).ready(function() {
     const favoriteColor = $("input#color").val();
     $(".person").text(personInput);
     $(".address").text(addressInput);
-    $("#food").text(food);
+    $(".order").text(food);
     $(".deliveryDate").text(deliveryDate);
     $(".favoriteColor").text(favoriteColor);
     $(".receipt-showing").show();
