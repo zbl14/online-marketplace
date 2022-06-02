@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lanf="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Online Marketplace</title>
+</head>
+<body>
+  <div class="container" >
+    <h1><strong>Food Delivery Service Survey</strong></h1>
+  </div>
+  <div>
+    <form id="formOne">
+      <div class="form-group">
+        <label for="person">Your name</label>
+        <input id="person" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="address">Home address</label>
+        <input id="address" class="form-control" type="text">
+      </div>
+      <h2>What is your favorite food?</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="food" value="Pizza" checked>
+          Pizza
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="food" value="Hamburgers">
+          Hamburgers
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="food" value="Tacos">
+          Tacos
+        </label>
+      </div>
+  </div>
+  <h3>What is your prefer delivery date</h3>
+  <div class="form-group">
+    <label for="deliveryDate">Date of birth:</label>
+    <input id="deliveryDate" class="form-control" type="date">
+  </div>
+  <div class="form-group">
+    <label for="color">What is your favorite color?</label>
+    <input id="color" class="form-control" type="color">
+  </div>
+  <button type="submit" class="btn">Submit form!</button>
+    </form>
+  <div class="story">
+    <h4>Your survey has been submitted!</h4>
+    <p><span id="receipt"></span></p>
+    <p>Thank you for your business, <span class="person"></span> </p>
+  </div>
+</body>
+</html>
