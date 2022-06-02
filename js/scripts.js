@@ -6,8 +6,8 @@ $(document).ready(function() {
     const food = $("input:radio[pizza]:checked").val();
     const deliveryDate = $("input#deliveryDate").val();
     const favoriteColor = $("input#color").val();
-    const receipt = $("output#receipt").val();
-    const result = $("personInput + addressInput + food + deliveryDate + favoriteColor").val();
+    const result = personInput + " " + food;
+    // const receipt = $("output#receipt"\).val();
     //$(".person").text(personInput);
     //$(".address").text(addressInput);
     //$(".food").text(food);
@@ -19,6 +19,6 @@ $(document).ready(function() {
     $(".deliveryDate").text(deliveryDate);
     $(".favoriteColor").text(favoriteColor);
     $(".receipt").text(result);
-    $("#story").show();
+    $(".receipt-showing").show();
   });
 });
